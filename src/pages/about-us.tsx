@@ -31,12 +31,12 @@ function Page() {
                     <div className="about__card">
                         <div className="about__card-title">About Us</div>
                         <div className="about__card-text">
-                            RedParts is an international company with 30 years of history selling spare parts for cars,
+                            DC Wheels is an international company with 30 years of history selling tyres for cars,
                             trucks and motorcycles.
                             During our work we managed to create a unique service for the sale and delivery of spare
                             parts around the world.
                         </div>
-                        <div className="about__card-author">Ryan Ford, CEO RedParts</div>
+                        <div className="about__card-author">CEO DC Wheels</div>
                         <div className="about__card-signature">
                             <AppImage src="/images/signature.jpg" width="160" height="55" />
                         </div>

@@ -17,7 +17,7 @@ function Logo(props: Props) {
                 </div>
                 <div className="logo__image">
                     {/* logo */}
-                    <img src='images/logo.png' width='120' />
+                    <img src="images/logo.png" width="120" alt="" />
                     {/* logo / end */}
                 </div>
             </AppLink>

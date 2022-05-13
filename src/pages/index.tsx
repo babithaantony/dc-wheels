@@ -7,14 +7,14 @@ import BlockBanners from '~/components/blocks/BlockBanners';
 import BlockBrands from '~/components/blocks/BlockBrands';
 import BlockFeatures from '~/components/blocks/BlockFeatures';
 import BlockFinder from '~/components/blocks/BlockFinder';
-import BlockPosts from '~/components/blocks/BlockPosts';
+// import BlockPosts from '~/components/blocks/BlockPosts';
 import BlockProductsCarousel from '~/components/blocks/BlockProductsCarousel';
 import BlockProductsColumns from '~/components/blocks/BlockProductsColumns';
 import BlockSale from '~/components/blocks/BlockSale';
 import BlockSpace from '~/components/blocks/BlockSpace';
 import BlockZone from '~/components/blocks/BlockZone';
 import url from '~/services/url';
-import { shopApi, blogApi } from '~/api';
+import { shopApi } from '~/api';
 import { useDeferredData, useProductColumns, useProductTabs } from '~/services/hooks';
 
 function Page() {
@@ -61,12 +61,12 @@ function Page() {
         { title: 'Show All', url: url.products() },
     ], []);
 
-    const latestPosts = useDeferredData(() => blogApi.getLatestPosts(8), []);
-    const latestPostsLinks = useMemo(() => [
-        { title: 'Special Offers', url: url.blog() },
-        { title: 'New Arrivals', url: url.blog() },
-        { title: 'Reviews', url: url.blog() },
-    ], []);
+    // const latestPosts = useDeferredData(() => blogApi.getLatestPosts(8), []);
+    // const latestPostsLinks = useMemo(() => [
+    //     { title: 'Special Offers', url: url.blog() },
+    //     { title: 'New Arrivals', url: url.blog() },
+    //     { title: 'Reviews', url: url.blog() },
+    // ], []);
 
     const brands = useDeferredData(() => shopApi.getBrands({ limit: 16 }), []);
 

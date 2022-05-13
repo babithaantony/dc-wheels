@@ -2,11 +2,14 @@
   "name": "red-parts.react",
   "version": "1.2.0",
   "private": true,
+  "homepage": "./",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-and-start": "next build && next start"
+    "build-and-start": "next build && next start",
+    "build-and-export": "next build && next export"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.4",
