@@ -28,11 +28,7 @@ function MegamenuLinks(props: Props) {
     return (
         <ul className={rootClasses} {...rootProps}>
             {links.map((link, linkIndex) => {
-                const subLinks = link.links || [];
-                const hasSubLinks = subLinks.length > 0;
-                const linkClasses = classNames('megamenu-links__item', {
-                    'megamenu-links__item--has-submenu': link.links,
-                });
+                const linkClasses = classNames('megamenu-links__item');
 
                 return (
                     <li className={linkClasses} key={linkIndex}>
@@ -44,10 +40,7 @@ function MegamenuLinks(props: Props) {
                         >
                             {link.title}
                         </AppLink>
-                        {hasSubLinks && (
-                            <MegamenuLinks links={subLinks} level={level + 1} />
-                        )}
-                    </li>
+                       </li>
                 );
             })}
         </ul>
